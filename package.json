@@ -1,0 +1,44 @@
+{
+  "name": "mozaik-demo",
+  "version": "2.0.0-alpha.13",
+  "description": "Mozaïk demo dashboard",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/plouc/mozaik-demo"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Raphaël Benitte",
+    "url": "https://github.com/plouc"
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": "^6.0.0",
+    "npm": "^3.0.0"
+  },
+  "dependencies": {
+    "concurrently": "^3.4.0",
+    "d3": "4.2.6",
+    "dotenv": "^2.0.0",
+    "font-awesome": "^4.7.0",
+    "mozaik": "^2.0.0-alpha.13",
+    "mozaik-ext-github": "^2.0.0-alpha.3",
+    "mozaik-ext-travis": "^2.0.0-alpha.2",
+    "mozaik-themes": "^1.0.0-alpha.1",
+    "nivo": "^1.0.0-alpha.8",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "react-scripts": "0.8.4"
+  },
+  "scripts": {
+    "start": "concurrently \"node server.js\" \"react-scripts start\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "postinstall": "npm run build"
+  },
+  "proxy": "http://localhost:5000"
+}

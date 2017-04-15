@@ -1,0 +1,9 @@
+.DS_Store
+.env
+.idea
+/node_modules
+/build
+*.log*
+config-*.yml
+!config-github.yml
+!config-travis.yml
