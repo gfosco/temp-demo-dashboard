@@ -1,0 +1,14 @@
+.travis.yml
+.eslintrc
+.babelrc
+.gitignore
+.DS_Store
+/.nyc_output
+/coverage
+/test
+/src/ui
+preview.png
+*.log*
+yarn.lock
+webpack.config.js
+browserlist
