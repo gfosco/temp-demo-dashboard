@@ -37,7 +37,7 @@ let dashboards = [];
 
 _.map(projects, (p) => {
   let board = {
-    title: ' ',
+    title: p,
     columns: 3,
     rows: 3,
     widgets: [
